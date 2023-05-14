@@ -1,5 +1,5 @@
 
-/*--/ Star Typed /--*/
+/*--/ Star Typed text-slider-item en section Intro /--*/
 if ($('.text-slider').length == 1) {
   var typed_strings = $('.text-slider-items').text();
   var typed = new Typed('.text-slider', {
@@ -11,7 +11,7 @@ if ($('.text-slider').length == 1) {
   });
 }
 
-/*--/ Navbar Menu Reduce /--*/
+/*--/ Navbar Menu cambio transparente a blanco /--*/
 $(window).trigger('scroll');
 $(window).on('scroll', function () {
   var pixels = 50;
@@ -31,7 +31,7 @@ $(window).on('scroll', function () {
 });
 
 
-/*--/ Star Scrolling nav /--*/
+/*--/ Star Scrolling nav /--
 $('a.js-scroll[href*="#"]:not([href="#"])').on("click", function () {
   if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
     var target = $(this.hash);
@@ -43,21 +43,21 @@ $('a.js-scroll[href*="#"]:not([href="#"])').on("click", function () {
       return false;
     }
   }
-});
+});*/
 
-// Closes responsive menu when a scroll trigger link is clicked
+/* JS-Scroll resalta opciones del menu*/
 $('.js-scroll').on("click", function () {
   $('.navbar-collapse').collapse('hide');
 });
 
-// Activate scrollspy to add active class to navbar items on scroll
+/*Activate scrollspy to add active class to navbar items on scroll*/
 $('body').scrollspy({
   target: '#mainNav',
   offset: navHeight
 });
-/*--/ End Scrolling nav /--*/
 
-/*--cards --*/
+
+
 
 
 
