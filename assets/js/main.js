@@ -50,18 +50,52 @@ $('.js-scroll').on("click", function () {
   $('.navbar-collapse').collapse('hide');
 });
 
-/*Activate scrollspy to add active class to navbar items on scroll*/
-$('body').scrollspy({
-  target: '#mainNav',
-  offset: navHeight
+/*Activate scrollspy marca las opciones actuales en el navbar*/
+$(document).ready(function () {
+  var navHeight = $('.navbar').outerHeight();
+  $('body').scrollspy({
+    target: '#mainNav',
+    offset: navHeight
+  });
 });
 
 
+/* progress bar animacion*/
+// Define los valores de porcentaje para cada barra
+var progressBars = document.querySelectorAll('.progress-bar');
 
+function animateProgressBar(progressBar) {
+    var value = progressBar.getAttribute('data-value');
+    var percent = progressBar.querySelector('.progress-percent');
+    var label = progressBar.querySelector('.progress-label');
+    var width = 0;
+    var id = setInterval(frame, 10);
 
+    function frame() {
+        if (width >= value) {
+            clearInterval(id);
+        } else {
+            width++;
+            progressBar.style.width = width + '%';
+        }
+    }
 
+    label.textContent = label.textContent + ' (' + value + '%)';
+}
 
+function handleIntersect(entries) {
+    entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+            animateProgressBar(entry.target);
+        }
+    });
+}
 
+var observer = new IntersectionObserver(handleIntersect, {threshold: 0.2});
+
+progressBars.forEach(function(bar) {
+    observer.observe(bar);
+});
 
 
 
