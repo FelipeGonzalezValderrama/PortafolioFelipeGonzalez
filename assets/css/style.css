@@ -13,7 +13,8 @@
 
 
 
-html, .container-sm {
+html,
+.container-sm {
     font-family: 'Oswald', sans-serif;
     font-style: italic;
 }
@@ -366,43 +367,10 @@ a:hover {
     display: none;
 }
 
-/*
-.intro-single {
-    height: 350px;
-}
-
-.intro-single .intro-content {
-    margin-top: 30px;
-}
-
-.intro-single .intro-title {
-    text-transform: uppercase;
-    font-size: 3rem;
-}
-
-.intro-single .breadcrumb {
-    background-color: transparent;
-    color: #0078ff;
-}
-
-
-.intro-single .breadcrumb .breadcrumb-item:before {
-    color: #cde1f8;
-}
-
-.intro-single .breadcrumb .breadcrumb-item.active {
-    color: #cde1f8;
-}
-
-.intro-single .breadcrumb a {
-    color: #fff;
-}
-
-
 /*--section work-*/
 #work {
     background-color: #040404;
-    padding: 20rem 0;
+    padding: 0;
 }
 
 
@@ -444,5 +412,55 @@ a:hover {
     font-size: 10px;
     font-weight: 600;
     color: #fff;
-    text-shadow: 0 
+    text-shadow: 0
+}
+
+/*--Cards--*/
+
+.card {
+    position: relative;
+    width: 225px;
+    height: 275px;
+    margin: 0 auto;
+    background: #000;
+    border-radius: 15px;
+    box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+}
+
+.card-img-top {
+    height: 225px;
+    width: 150px;
+
+}
+
+.card-text {
+    height: 175px;
+    overflow: auto;
+    /* agregar scroll si el contenido excede la altura fijada */
+}
+
+/*--hover shadow cards--*/
+.card {
+    transition: box-shadow 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+.socialIcon {
+    transition: transform .2s ease-in-out;
+}
+
+.socialIcon :hover {
+    transform: scale(1.3);
+
+}
+
+#logoBig {
+    transition: transform .1s ease-in-out;
+}
+
+#logoBig :hover {
+    transform: scale(1.3);
+
 }

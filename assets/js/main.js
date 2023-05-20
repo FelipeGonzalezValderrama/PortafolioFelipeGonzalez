@@ -65,36 +65,34 @@ $(document).ready(function () {
 var progressBars = document.querySelectorAll('.progress-bar');
 
 function animateProgressBar(progressBar) {
-    var value = progressBar.getAttribute('data-value');
-    var percent = progressBar.querySelector('.progress-percent');
-    var label = progressBar.querySelector('.progress-label');
-    var width = 0;
-    var id = setInterval(frame, 10);
+  var value = progressBar.getAttribute('data-value');
+  var percent = progressBar.querySelector('.progress-percent');
+  var label = progressBar.querySelector('.progress-label');
+  var width = 0;
+  var id = setInterval(frame, 10);
 
-    function frame() {
-        if (width >= value) {
-            clearInterval(id);
-        } else {
-            width++;
-            progressBar.style.width = width + '%';
-        }
+  function frame() {
+    if (width >= value) {
+      clearInterval(id);
+    } else {
+      width++;
+      progressBar.style.width = width + '%';
     }
-
-    label.textContent = label.textContent + ' (' + value + '%)';
+  }
 }
 
 function handleIntersect(entries) {
-    entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-            animateProgressBar(entry.target);
-        }
-    });
+  entries.forEach(function (entry) {
+    if (entry.isIntersecting) {
+      animateProgressBar(entry.target);
+    }
+  });
 }
 
-var observer = new IntersectionObserver(handleIntersect, {threshold: 0.2});
+var observer = new IntersectionObserver(handleIntersect, { threshold: 0.2 });
 
-progressBars.forEach(function(bar) {
-    observer.observe(bar);
+progressBars.forEach(function (bar) {
+  observer.observe(bar);
 });
 
 
