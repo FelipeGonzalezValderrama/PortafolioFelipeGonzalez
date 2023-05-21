@@ -96,5 +96,32 @@ progressBars.forEach(function (bar) {
 });
 
 
+// formulario.js
+
+// Función para enviar el formulario
+function enviarFormulario() {
+  // Obtener los valores ingresados en el formulario
+  var nombre = document.getElementById('nombre').value;
+  var correo = document.getElementById('correo').value;
+  var mensaje = document.getElementById('mensaje').value;
+
+  // Configurar los datos del correo electrónico
+  var data = {
+    nombre: nombre,
+    correo: correo,
+    mensaje: mensaje
+  };
+
+  // Enviar el correo electrónico utilizando EmailJS
+  emailjs.send('service_guph19a', 'template_hn59lub', data)
+    .then(function(response) {
+      console.log('El correo electrónico se envió correctamente', response.status, response.text);
+    }, function(error) {
+      console.log('Error al enviar el correo electrónico', error);
+    });
+
+  // Evitar que el formulario se envíe mediante la acción predeterminada
+  return false;
+}
 
 
