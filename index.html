@@ -28,7 +28,7 @@
 
 <body>
 
-    <!--navbar reparar inicio marcado -->
+    <!--navbar fixed scrollspy -->
     <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand js-scroll" href="#page-top"><img class="img-fluid" style="width: 35%;"
@@ -63,31 +63,30 @@
             </div>
         </div>
     </nav>
-    <!--Intro-->
+    <!--Intro Dwonload CV Typed animation glow btn-->
     <section>
         <div id="home" class="intro route bg-image" style="background-image: url(assets/img/intro-bg.jpg)">
             <div class="overlay-itro"></div>
             <div class="intro-content display-table">
                 <div class="table-cell">
                     <div class="container">
-                        <h1 id="nombreTitulo" class="intro-title mb-4 fw-bold">Felipe Gonzalez <span><a id="logoBig"
-                                    href="assets/data_files/FelipeGonzalezCVDev-.pdf"> <img class="img-fluid"
-                                        style="width: 10%;" src="assets/img/apple-touch-icon.png"
-                                        alt="icon-apple"></span></h1>
-                        <p class="intro-subtitle"></a><span class="text-slider-items fw-bold">Full
-                                Stack,Frontend,JavaScript, Backend,Java, Phyton, Web Developer,SQL,Git</span><strong
+                        <h1 id="nombreTitulo" class="intro-title mb-4 fw-bold">Felipe Gonzalez </h1>
+                        <p class="intro-subtitle fs-2 fw-bold"></a><span class="text-slider-items">
+                                FullStack,Frontend,JavaScript, Backend,Java, Phyton, Web Developer,SQL,Git</span><strong
                                 class="text-slider"></strong></p>
-                        <p class="pt-3"><a class="btn-primary btn js-scroll px-4" data-bs-toggle="tooltip"
-                                data-bs-placement="top" title="Download"
-                                href="assets/data_files/FelipeGonzalezCVDev-.pdf" role="button">CV
-                                Download</a></p>
+                        <br>
+                        <div class="container">
+                            <button class='glowing-btn'><span class='glowing-txt' data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="CV download">Dow<span
+                                        class='faulty-letter'>nl</span>oad CV</span></button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <br><br><br>
-    <!--Cards-->
+    <!--Cards Skills programing img-->
     <section id="cardsIntro">
         <div class="container text-center">
             <h1 class="fw-bold fst-italic">SKILLS</h1>
@@ -124,7 +123,6 @@
                             <h5 class="card-title text-center fs-3 fst-italic">Phyton</h5>
                             <p class="card-text text-align">Django, conexion a bases de Datos consumo de API con
                                 libreria Request
-
                             </p>
                         </div>
                     </div>
@@ -143,16 +141,14 @@
             </div>
         </div>
     </section>
-    <br><br><br>
+    <br><br><br><br>
     <!--progress bar-->
-    <section class="container-sm">
+    <section class="container w-50">
         <div class="container">
-
             <h5>Java 75%</h5>
             <div class="progress">
                 <div class="progress-wrapper">
                     <div class="progress-bar" id="java" data-value="75">
-
                     </div>
                 </div>
             </div>
@@ -160,7 +156,6 @@
             <div class="progress">
                 <div class="progress-wrapper">
                     <div class="progress-bar" id="python" data-value="50">
-
                     </div>
                 </div>
             </div>
@@ -168,7 +163,6 @@
             <div class="progress">
                 <div class="progress-wrapper">
                     <div class="progress-bar" id="javascript" data-value="65">
-
                     </div>
                 </div>
             </div>
@@ -176,7 +170,6 @@
             <div class="progress">
                 <div class="progress-wrapper">
                     <div class="progress-bar" id="html" data-value="85">
-
                     </div>
                 </div>
             </div>
@@ -184,7 +177,6 @@
             <div class="progress">
                 <div class="progress-wrapper">
                     <div class="progress-bar" id="css" data-value="75">
-
                     </div>
                 </div>
             </div>
@@ -192,49 +184,64 @@
             <div class="progress">
                 <div class="progress-wrapper">
                     <div class="progress-bar" id="sql" data-value="85">
-
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <br><br>
+    <!-- Works section -->
     <section id="work">
         <div class="container">
-            <h1 class="text-center fw-bold fst-italic pb-" style="color: #53f904;">Works</h1>
+            <h1 class="text-center fw-bold fst-italic pt-4" style="color: #53f904;">Works</h1>
         </div>
+        <div><p></p></div>
     </section>
     <br>
+    <!-- Contact email -->
     <section>
         <div>
             <h1 class="fw-bold fst-italic text-center">Contacto</h1>
-            <br>
+            <br><br>
         </div>
-        <div class="container">
-            <form id="formulario">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" required>
 
-                <label for="correo">Correo electrónico:</label>
-                <input type="email" id="correo" required>
-
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" required></textarea>
-
-                <button type="submit">Enviar</button>
-            </form>
+        <div class="row d-inline-flex justify-content-center">
+            <div class="col-lg-6">
+                <form id="formulario">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" required>
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" required>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+            <div class="col-lg-3">
+                <img class="img-fluid  p-5" src="assets/img/android-chrome-512x512.png" alt="icon-apple">
+            </div>
         </div>
+
     </section>
     <section>
 
 
 
     </section>
+
+    <br><br><br><br>
+    <!--Social Media-->
     <section>
+        <div class="container-flex " id="prefooter">
+            <div>
+                <h1 class="text-center">social media</h1>
+            </div>
+        </div>
         <div class="container">
             <div class=" d-lg-flex justify-content-lg-end ps-2 pt-4">
                 <p class="fw-bold fs-4"><a href="#"> <img class="img-fluid" width="45%"
-                            src="assets/img/apple-touch-icon.png" alt=""></a></p>
+                            src="assets/img/apple-touch-icon.png" alt="icon" data-bs-toggle="tooltip"
+                            data-bs-placement="top" title="Subir"></a></p>
                 <div class="container-fluid d-lg-flex justify-content-lg-end pb-5 pe-5">
                     <span class="icons fs-4 pt-3">
                         <a class="socialIcon" style="color: black;" href="redirecting.html"><i
@@ -249,11 +256,12 @@
                 </div>
             </div>
         </div>
+        <!--footer copyright-->
         <sesction>
-            <footer class="container-flex pb-3 " style=" background-color: #040404;">
+            <footer class="container-flex pb-3 " id="footer">
                 <div class="container-flex text-center text-white">
                     <span>
-                        <p class="fw-bold fst-italic pt-4">© 2023 Copyright: <a class="text-white" href="#"><img
+                        <p class="fw-bold fst-italic pt-4 " style="color: #f5f5f5; font-family: 'Satisfy', cursive;">© 2023 Copyright: <a class="text-white fs-4" href="#"><img
                                     src="assets/img/favicon-32x32.png" alt="icon"></a></p>
                     </span>
                 </div>
