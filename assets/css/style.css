@@ -10,11 +10,6 @@
     font-size: 70px;
 }
 
-#work,
-#prefooter,
-#footer {
-    background-color: #040404;
-}
 
 #prefooter {
     color: #53f904;
@@ -25,6 +20,8 @@ html,
     font-family: 'Oswald', sans-serif;
     font-style: italic;
 }
+
+
 
 h1,
 p {
@@ -375,6 +372,8 @@ a:hover {
     height: 8px;
     margin-bottom: 25px;
     position: relative;
+    font-family: 'Roboto', sans-serif;
+
 }
 
 .progress-bar {
@@ -388,6 +387,7 @@ a:hover {
     align-items: center;
     justify-content: space-between;
     padding: 0 10px;
+
 }
 
 .progress-label {
@@ -719,7 +719,6 @@ button[type="submit"]:hover {
 .flex-center {
     width: 100%;
     min-height: 50vh;
-    background: #000;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -756,3 +755,5 @@ button[type="submit"]:hover {
         text-shadow: -5px 0 rgba(244, 67, 54, 1), 5px -4px rgba(33, 150, 243, 1);
     }
 }
+
+/*----*/
