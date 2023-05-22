@@ -28,7 +28,7 @@
     <!--navbar fixed scrollspy -->
     <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll" href="#page-top"><img class="img-fluid" style="width: 35%;"
+            <a class="navbar-brand js-scroll" href="#home"><img class="img-fluid" style="width: 35%;"
                     src="assets/img/apple-touch-icon.png" alt="icon-apple"></a>
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
                 aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -73,14 +73,18 @@
                                 class="text-slider"></strong></p>
                         <br>
                         <div class="container">
-                            <button class='glowing-btn'><span class='glowing-txt' data-bs-toggle="tooltip"
-                                    data-bs-placement="top" title="CV download">Dow<span
-                                        class='faulty-letter'>nl</span>oad CV</span></button>
+                            <button class="glowing-btn">
+                                <a class="text-decoration-none text-reset"
+                                    href="assets/data_files/FelipeGonzalezCVDev-.pdf" download>
+                                    <span class="glowing-txt" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        title="CV download">
+                                        Dow<span class="faulty-letter">nl</span>oad CV
+                                    </span>
+                                </a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     <br><br><br>
     <!--Cards Skills programing img-->
@@ -97,9 +101,9 @@
                         <img src="assets/img/javaCard.png" class="card-img-top" alt="card1">
                         <div class="card-body">
                             <h5 class="card-title text-center fs-3 fst-italic">JAVA</h5>
-                            <p class="card-text text-justify">Spring Boot, OOP, Maven, JVM, Thymeleaf,Rest, Spring
-                                Inicializator, Spring Tool Suite, ORM
-                                Jpa Hibernate JBDC, MVC, Microservisios </p>
+                            <p class="card-text text-justify">Spring Boot, POO, Spring
+                                Initializr, Inyección de Dependencias, Integración ORM JPA Hibernate JBDC,
+                                Maven,Thymeleaf, MVC, JAR, Uso de anotaciones @ </p>
                         </div>
                     </div>
                 </div>
@@ -108,8 +112,8 @@
                         <img src="assets/img/javascriptCard.png" class="card-img-top" alt="card2">
                         <div class="card-body">
                             <h5 class="card-title text-center fs-3 fst-italic">JavaScript</h5>
-                            <p class="card-text text-justify">Consumo de API con Fetch y Ajax, manejo de librerias
-                                Jquery, React, Angular</p>
+                            <p class="card-text text-justify">Manipulación del DOM, eventos, funciones, API y servicios
+                                web, API Fetch, Ajax, JSON, frameworks y bibliotecas como jQuery, React, Angular</p>
                         </div>
                     </div>
                 </div>
@@ -118,8 +122,8 @@
                         <img src="assets/img/phytonCard.jpg" class="card-img-top" alt="phytonImg">
                         <div class="card-body">
                             <h5 class="card-title text-center fs-3 fst-italic">Phyton</h5>
-                            <p class="card-text text-align">Django, conexion a bases de Datos consumo de API con
-                                libreria Request
+                            <p class="card-text text-align">Django, POO, validación y procesamiento de datos formulario,
+                                Django ORM, Django REST Framework, middleware, Django CMS, Django Allauth
                             </p>
                         </div>
                     </div>
@@ -129,8 +133,8 @@
                         <img src="assets/img/sqlCard.jpg" class="card-img-top" alt="sqlIMG">
                         <div class="card-body">
                             <h5 class="card-title text-center fs-3 fst-italic">SQL</h5>
-                            <p class="card-text text-justify">SQL con MySql, PostgreSql, Oracle consultas Select, Inner
-                                Join gestion de Datos.
+                            <p class="card-text text-justify">MySql, Oracle, PostgreSql, Diseño y creación de RDBMS, uso
+                                de triggers, cláusulas como SELECT, FROM, WHERE, JOIN, GROUP BY, HAVING, ORDER BY, etc..
                             </p>
                         </div>
                     </div>
@@ -149,10 +153,10 @@
                     </div>
                 </div>
             </div>
-            <h5>Phyton 50%</h5>
+            <h5>Phyton 45%</h5>
             <div class="progress">
                 <div class="progress-wrapper">
-                    <div class="progress-bar" id="python" data-value="50">
+                    <div class="progress-bar" id="python" data-value="45">
                     </div>
                 </div>
             </div>
@@ -163,10 +167,10 @@
                     </div>
                 </div>
             </div>
-            <h5>HTML5 85%</h5>
+            <h5>HTML5 90%</h5>
             <div class="progress">
                 <div class="progress-wrapper">
-                    <div class="progress-bar" id="html" data-value="85">
+                    <div class="progress-bar" id="html" data-value="90">
                     </div>
                 </div>
             </div>
@@ -186,7 +190,7 @@
             </div>
         </div>
     </section>
-    <br><br><br><br><br>
+    <br><br><br><br>
     <!-- Works section -->
     <section id="work" style="background-image: url(assets/img/bg-dark-pattern1.png);">
         <div class="container">
@@ -251,12 +255,11 @@
     <br><br>
     <!-- Contact email -->
     <section id="contact">
-        <div>
+        <div class="container">
             <h1 class="fw-bold fst-italic text-center">Contactoₓ</h1>
             <br><br>
         </div>
-
-        <div class="row d-flex justify-content-center align-items-center">
+        <div class="row d-flex justify-content-center align-items-center container">
             <div class="col-lg-6">
                 <form id="formulario">
                     <label for="nombre">Nombre:</label>
@@ -268,7 +271,7 @@
                     <button type="submit">Enviar</button>
                 </form>
             </div>
-            <div class="col-lg-2 text-center">
+            <div id="logoBig" class="col-lg-2 text-center">
                 <img class="img-fluid w-75" src="assets/img/android-chrome-512x512.png" alt="icon-apple">
             </div>
         </div>
@@ -280,7 +283,6 @@
             <div>
                 <h1 class="text-center pt-5 pb-5">social mediaₓ</h1>
             </div>
-
             <div class="container">
                 <div class="container">
                     <div class="container text-center pb-5">
@@ -293,7 +295,7 @@
             </div>
         </div>
         <!--footer copyright-->
-        <section>
+        
             <footer class="container-flex pb-5 " id="footer">
                 <div class="container-flex text-center text-white">
                     <p class="fw-bold fst-italic fs-5" style="color: #f5f5f5; font-family: 'Satisfy', cursive;">©
@@ -301,7 +303,7 @@
                                 alt="icon"></a></p>
                 </div>
             </footer>
-        </section>
+        
 
     </section>
     <!--Jquery-->

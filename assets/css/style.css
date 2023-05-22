@@ -21,8 +21,6 @@ html,
     font-style: italic;
 }
 
-
-
 h1,
 p {
     color: #1e1e1e;
@@ -438,21 +436,22 @@ a:hover {
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
 }
 
-.socialIcon {
-    transition: transform .2s ease-in-out;
-}
-
-.socialIcon :hover {
-    transform: scale(1.3);
-
-}
 
 #logoBig {
-    transition: transform .1s ease-in-out;
+    transition: transform 0.8s ease-in-out;
 }
 
 #logoBig :hover {
     transform: scale(1.3);
+
+}
+
+.col-lg-3 {
+    transition: transform 0.3s ease;;
+}
+
+.col-lg-3 :hover {
+    transform: scale(1.1);
 
 }
 
@@ -516,6 +515,7 @@ button[type="submit"]:hover {
     font-weight: 900;
     letter-spacing: 0.4em;
 
+
     -webkit-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
         0px 0px 0.5em 0px var(--glow-color);
     -moz-box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
@@ -534,6 +534,7 @@ button[type="submit"]:hover {
         0 0 0.45em var(--glow-color);
     text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em var(--glow-color);
     animation: text-flicker 3s linear infinite;
+
 
 }
 
@@ -756,4 +757,5 @@ button[type="submit"]:hover {
     }
 }
 
-/*----*/
+/*--btn formulario--*/
+
