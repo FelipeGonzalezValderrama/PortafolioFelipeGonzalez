@@ -439,6 +439,8 @@ a:hover {
 
 #logoBig {
     transition: transform 0.8s ease-in-out;
+    
+    
 }
 
 #logoBig :hover {
@@ -463,6 +465,8 @@ a:hover {
     background-color: #f5f5f5;
     border: 1px solid #ddd;
     border-radius: 5px;
+    box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+
 }
 
 label {
@@ -757,5 +761,14 @@ button[type="submit"]:hover {
     }
 }
 
-/*--btn formulario--*/
+/*--imagenes section work--*/
 
+.img-fluid{
+    box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+
+}
+
+iframe{
+    box-shadow: 0 15px 60px rgba(0, 0, 0, 0.5);
+
+}

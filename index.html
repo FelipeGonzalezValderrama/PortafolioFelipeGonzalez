@@ -51,7 +51,7 @@
                         <a class="nav-link js-scroll" href="#work">Works</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll" href="#contact">Contacto</a>
+                        <a class="nav-link js-scroll" href="#contact">Contact</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll" href="#prefooter">Social Media</a>
@@ -199,13 +199,34 @@
         </div>
         <br><br><br>
         <div class="container">
-            <div class="row text-center text-lg-start">
+            <div class="row text-center text-lg-start g-4">
                 <div class="col-lg-3 col-md-4 col-6">
                     <a href="https://felipegonzalezvalderrama.github.io/DigimonParadise/" target="_blank"
                         class="d-block mb-4 h-100">
                         <img class="img-fluid img-thumbnail" src="assets/img/DigimonParadiseWorks.png"
                             alt="DigimonParadise" data-bs-toggle="tooltip" data-bs-placement="top"
                             title="Digimon Paradise API Fetch">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="https://felipegonzalezvalderrama.github.io/TurismoChile/" target="_blank"
+                        class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="assets/img/Captura de pantalla 2023-05-23 092603.png"
+                            alt="html" data-bs-toggle="tooltip" data-bs-placement="top" title="Turismo Chile">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="https://felipegonzalezvalderrama.github.io/GTweb/" target="_blank"
+                        class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="assets/img/gtWebWorks.png" alt=""
+                            data-bs-toggle="tooltip" data-bs-placement="top" title="GT-web html">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <a href="https://felipegonzalezvalderrama.github.io/GoogleMapsAPI/" target="_blank"
+                        class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="assets/img/GooglemapsAPI.png" alt=""
+                            data-bs-toggle="tooltip" data-bs-placement="top" title="API Google Maps JS">
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
@@ -225,13 +246,6 @@
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-6">
-                    <a href="https://felipegonzalezvalderrama.github.io/TurismoChile/" target="_blank"
-                        class="d-block mb-4 h-100">
-                        <img class="img-fluid img-thumbnail" src="assets/img/Captura de pantalla 2023-05-23 092603.png"
-                            alt="html" data-bs-toggle="tooltip" data-bs-placement="top" title="Turismo Chile">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6">
                     <a href="https://github.com/FelipeGonzalezValderrama/PhytonDigimonApiConsumo" target="_blank"
                         class="d-block mb-4 h-100">
                         <img class="img-fluid img-thumbnail" src="assets/img/phytonApiWorks.png" alt="phyton"
@@ -245,19 +259,6 @@
                             data-bs-toggle="tooltip" data-bs-placement="top" title="Menu Cajero JavaScript">
                     </a>
                 </div>
-                <div class="col-lg-3 col-md-4 col-6">
-                    <a href="https://felipegonzalezvalderrama.github.io/GTweb/" target="_blank"
-                        class="d-block mb-4 h-100">
-                        <img class="img-fluid img-thumbnail" src="assets/img/gtWebWorks.png" alt=""
-                            data-bs-toggle="tooltip" data-bs-placement="top" title="GT-web html google maps api">
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6">
-                    <a href="#" target="_blank" class="d-block mb-4 h-100">
-                        <img class="img-fluid img-thumbnail" src="https://source.unsplash.com/EMSDtjVHdQ8/400x300"
-                            alt="" data-bs-toggle="tooltip" data-bs-placement="top" title="Digimon Paradise API">
-                    </a>
-                </div>
             </div>
             <br><br><br><br><br>
         </div>
@@ -269,37 +270,50 @@
             <h1 class="fw-bold fst-italic text-center">Contactoₓ</h1>
             <br><br>
         </div>
-        <div class="row d-flex justify-content-center align-items-center container">
-            <div class="col-lg-6">
-                <form id="formulario">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" required>
-                    <label for="correo">Correo electrónico:</label>
-                    <input type="email" id="correo" required>
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" required></textarea>
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
-            <div id="logoBig" class="col-lg-2 text-center">
-                <img class="img-fluid w-75" src="assets/img/android-chrome-512x512.png" alt="icon-apple">
+        <div class="container g-4">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-6">
+                    <form id="formulario">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" required>
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" required>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center pt-5">
+                    <div id="map" style="width: 100%; height: 350px;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60222.718900785396!2d-70.69305035462018!3d-33.445478874704236!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5410425af2f%3A0x8475d53c400f0931!2sSantiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1684937835351!5m2!1ses!2scl"
+                            width="400px" height="300px" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
             </div>
         </div>
+
+        <!---->
+
     </section>
     <br><br><br><br>
     <!--Social Media-->
     <section style="background-image: url(assets/img/bg-dark-pattern1.png);">
         <div class="container-flex " id="prefooter">
-            <div>
-                <h1 class="text-center pt-5 pb-5">socialₓ</h1>
-            </div>
             <div class="container">
+                <div id="logoBig" class="d-flex justify-content-center align-items-center pt-5 pb-3">
+                    <img class="img-fluid" style=" width: 10%;" src="assets/img/android-chrome-512x512.png"
+                        alt="icon-apple">
+                </div>
+            </div>
+            <div class="container pt-5">
                 <div class="container">
                     <div class="container text-center pb-5">
-                        <i class="fa-brands fa-invision fa-4x icon-3d"></i>
-                        <i class="fa-brands fa-github-square fa-4x icon-3d"></i>
-                        <i class="fa-brands fa-instagram fa-4x icon-3d""></i>
-                    <i class=" fa-brands fa-twitter fa-4x icon-3d"></i>
+                        <a href="https://www.linkedin.com/in/felipe-gonzalez-62a4ab247/" target="_blank"><i class="fa-brands fa-invision fa-4x icon-3d"></i></a>
+                        <a href="https://github.com/FelipeGonzalezValderrama" target="_blank"><i class="fa-brands fa-github-square fa-4x icon-3d"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram fa-4x icon-3d""></i></a>
+                        <a href=""><i class=" fa-brands fa-twitter fa-4x icon-3d"></i></a>
                     </div>
                 </div>
             </div>
@@ -311,6 +325,7 @@
                     2023 Copyright : <a class="text-white" href="#"><img src="assets/img/favicon-32x32.png"
                             alt="icon"></a></p>
             </div>
+            <!-- visits °N-->
             <div id="sfc2lw1z3p9lcj1adjbqqwufbg4b3gnunqs" class="container text-center"></div>
             <script type="text/javascript"
                 src="https://counter10.optistats.ovh/private/counter.js?c=2lw1z3p9lcj1adjbqqwufbg4b3gnunqs&down=async"
