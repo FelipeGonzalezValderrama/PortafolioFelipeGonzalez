@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
 
 
 
@@ -369,7 +370,7 @@ a:hover {
     height: 8px;
     margin-bottom: 25px;
     position: relative;
-    
+
 
 }
 
@@ -713,12 +714,6 @@ button[type="submit"]:hover {
         opacity: 1;
     }
 }
-/*
-@media only screen and (max-width: 600px) {
-    .glowing-btn {
-        font-size: 1em;
-    }
-}*/
 
 /*--Social Media--*/
 .flex-center {
@@ -773,3 +768,9 @@ iframe {
 
 }
 
+/*--carousel work--*/
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #000;
+}
