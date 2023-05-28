@@ -768,9 +768,14 @@ iframe {
 
 }
 
-/*--carousel work--*/
 
+/*--carousel work--*/
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-color: #000;
+    
+    
+    
 }
+
+

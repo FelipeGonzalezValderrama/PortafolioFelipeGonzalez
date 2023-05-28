@@ -109,6 +109,14 @@ function enviarFormulario() {
   return false;
 }
 
+//carousel
+$(document).ready(function() {
+  // Inicializar el tooltip al cargar la página
+  $('[data-bs-toggle="tooltip"]').tooltip();
+
+  // Activar el carrusel al cargar la página
+  $('#imageCarousel').carousel();
+});
 
 
 
