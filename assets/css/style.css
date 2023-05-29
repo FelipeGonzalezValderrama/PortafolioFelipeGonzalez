@@ -773,9 +773,18 @@ iframe {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-color: #000;
-    
-    
-    
 }
 
+/*--responsive carousel--*/
+@media (min-width: 768px) {
+    .carousel {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
 
+@media (max-width: 767px) {
+    .carousel {
+        width: 100%;
+    }
+}

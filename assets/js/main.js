@@ -51,8 +51,6 @@ var progressBars = document.querySelectorAll('.progress-bar');
 
 function animateProgressBar(progressBar) {
   var value = progressBar.getAttribute('data-value');
-  var percent = progressBar.querySelector('.progress-percent');
-  var label = progressBar.querySelector('.progress-label');
   var width = 0;
   var id = setInterval(frame, 10);
 
@@ -109,14 +107,6 @@ function enviarFormulario() {
   return false;
 }
 
-//carousel
-$(document).ready(function() {
-  // Inicializar el tooltip al cargar la página
-  $('[data-bs-toggle="tooltip"]').tooltip();
-
-  // Activar el carrusel al cargar la página
-  $('#imageCarousel').carousel();
-});
 
 
 
