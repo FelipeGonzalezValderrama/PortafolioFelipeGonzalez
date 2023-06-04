@@ -441,6 +441,7 @@ a:hover {
     transition: transform 0.8s ease-in-out;
 
 
+
 }
 
 #logoBig :hover {
@@ -459,7 +460,7 @@ a:hover {
 }
 
 /* Form Styles */
-#formulario {
+#form {
     max-width: 750px;
     margin: 5px auto;
     padding: 20px;
@@ -722,6 +723,7 @@ button[type="submit"]:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .icon-3d {
@@ -788,3 +790,5 @@ iframe {
         width: 100%;
     }
 }
+
+
