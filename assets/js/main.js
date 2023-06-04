@@ -95,7 +95,7 @@ document.getElementById('form')
     emailjs.sendForm(serviceID, templateID, this)
       .then(() => {
         btn.value = 'Send Email';
-        alert('Sent!');
+        alert('mensaje enviado gracias!');
       }, (err) => {
         btn.value = 'Send Email';
         alert(JSON.stringify(err));
