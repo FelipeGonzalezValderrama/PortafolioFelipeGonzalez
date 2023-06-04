@@ -780,7 +780,7 @@ iframe {
 /*--responsive carousel--*/
 @media (min-width: 768px) {
     .carousel {
-        width: 50%;
+        width: 70%;
         margin: 0 auto;
     }
 }
