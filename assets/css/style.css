@@ -1,11 +1,11 @@
-/*--general style--*/
+/*--google fonts general style--*/
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
 
 
-
+/*--general style--*/
 #nombreTitulo {
     font-family: 'Satisfy', cursive;
     font-size: 70px;
