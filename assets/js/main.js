@@ -30,12 +30,17 @@ $(window).on('scroll', function () {
   }
 });
 
-/* JS-Scroll resalta opciones del menu*/
+// JS-Scroll resalta opciones del menú
 $('.js-scroll').on("click", function () {
   $('.navbar-collapse').collapse('hide');
 });
 
-/*Activate scrollspy marca las opciones actuales en el navbar*/
+// Agregar el evento de clic para el botón de la hamburguesa
+$('.navbar-toggler').on('click', function () {
+  $('.navbar-collapse').collapse('toggle');
+});
+
+// Activate scrollspy marca las opciones actuales en el navbar
 $(document).ready(function () {
   var navHeight = $('.navbar').outerHeight();
   $('body').scrollspy({
@@ -43,6 +48,7 @@ $(document).ready(function () {
     offset: navHeight
   });
 });
+
 
 
 /* progress bar animacion IntersectionObserver
