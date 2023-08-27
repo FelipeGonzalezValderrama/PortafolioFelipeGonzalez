@@ -66,29 +66,33 @@
     <!--end navbar-->
 
     <!--Intro Dwonload CV Typed animation glow btn-->
-    <section>
-        <div id="home" class="intro route bg-image" style="background-color: black;"">
-            <div class=" overlay-itro"></div>
-        <div class="intro-content display-table">
-            <div class="table-cell">
-                <div class="container">
-                    <h1 id="nombreTitulo" class="intro-title mb-4 fw-bold">Felipe Gonzalez </h1>
-                    <p class="intro-subtitle fs-2 fw-bold"></a><span class="text-slider-items">
-                            FullStack, Frontend, JavaScript, Backend, Java, Python, Web Developer, SQL, Git, Scrum, SpringBoot, Django</span><strong class="text-slider"></strong></p>
-                    <br>
+    <section class="video-section">
+        <video autoplay muted loop id="video-bg">
+            <source src="assets/video/fggt_bg_video.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+        <div id="home" class="intro route bg-image">
+            <div class=" overlay-intro"></div>
+            <div class="intro-content display-table">
+                <div class="table-cell">
                     <div class="container">
-                        <button class="glowing-btn">
-                            <a class="text-decoration-none text-reset" href="assets/data_files/FelipeGonzalezCVDev-.pdf"
-                                download>
-                                <span class="glowing-txt" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    title="CV download">
-                                    Dow<span class="faulty-letter">nl</span>oad CV
-                                </span>
-                            </a>
+                        <h1 id="nombreTitulo" class="intro-title mb-4 fw-bold">Felipe Gonzalez </h1>
+                        <p class="intro-subtitle fs-2 fw-bold"></a><span class="text-slider-items">
+                                FullStack, Frontend, JavaScript, Backend, Java, Python, Web Developer, SQL, Git, Scrum, SpringBoot, Django</span><strong class="text-slider"></strong></p>
+                        <br>
+                        <div class="container">
+                            <button class="glowing-btn">
+                                <a class="text-decoration-none text-reset"
+                                    href="assets/data_files/FelipeGonzalezCVDev-.pdf" download>
+                                    <span class="glowing-txt" data-bs-toggle="tooltip" data-bs-placement="top"
+                                        title="CV download">
+                                        Dow<span class="faulty-letter">nl</span>oad CV
+                                    </span>
+                                </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     <br><br><br>
     <!--end Intro-->
@@ -198,7 +202,7 @@
     </section>
     <br><br><br><br>
     <!--end progress bars-->
-    <!-- Works section -->
+    <!-- Works Carousel section -->
     <section id="work" style="background-image: url(assets/img/bg-dark-pattern1.png);">
         <div class="container">
             <br><br><br>
@@ -217,10 +221,10 @@
                         </a>
                     </div>
                     <div class="carousel-item">
-                        <a href="" target="_blank"
-                            class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail imgCarrusel" src="assets/img/appvehiculos.png" alt="appvehiculos"
-                                data-bs-toggle="tooltip" data-bs-placement="top" title="APP DJANGO Vehiculos">
+                        <a href="" target="_blank" class="d-block mb-4 h-100">
+                            <img class="img-fluid img-thumbnail imgCarrusel" src="assets/img/appvehiculos.png"
+                                alt="appvehiculos" data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="APP DJANGO Vehiculos">
                         </a>
                     </div>
                     <div class="carousel-item">
@@ -235,29 +239,32 @@
                     <div class="carousel-item">
                         <a href="https://felipegonzalezvalderrama.github.io/CambioDivisas/" target="_blank"
                             class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail imgCarrusel" src="assets/img/DivisasCambio.png" alt="CambioDivisas"
-                                data-bs-toggle="tooltip" data-bs-placement="top" title="Cambio Divisas API">
+                            <img class="img-fluid img-thumbnail imgCarrusel" src="assets/img/DivisasCambio.png"
+                                alt="CambioDivisas" data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="Cambio Divisas API">
                         </a>
                     </div>
                     <div class="carousel-item">
-                        <a href="https://github.com/FelipeGonzalezValderrama/automatizacion-transferencia-cuentas" target="_blank"
-                            class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail imgCarrusel" src="assets/img/test_automation_selenium.png" alt="selenium"
-                                data-bs-toggle="tooltip" data-bs-placement="top" title="SELENIUM Test Automation JAVA">
+                        <a href="https://github.com/FelipeGonzalezValderrama/automatizacion-transferencia-cuentas"
+                            target="_blank" class="d-block mb-4 h-100">
+                            <img class="img-fluid img-thumbnail imgCarrusel"
+                                src="assets/img/test_automation_selenium.png" alt="selenium" data-bs-toggle="tooltip"
+                                data-bs-placement="top" title="SELENIUM Test Automation JAVA">
                         </a>
                     </div>
                     <div class="carousel-item">
                         <a href="https://felipegonzalezvalderrama.github.io/GTweb/" target="_blank"
                             class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail imgCarrusel" src="assets/img/gtWebWorks.png" alt="gt web"
-                                data-bs-toggle="tooltip" data-bs-placement="top" title="GT-web html-css-bootstrap">
+                            <img class="img-fluid img-thumbnail imgCarrusel" src="assets/img/gtWebWorks.png"
+                                alt="gt web" data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="GT-web html-css-bootstrap">
                         </a>
                     </div>
                     <div class="carousel-item">
                         <a href="https://felipegonzalezvalderrama.github.io/GoogleMapsAPI/" target="_blank"
                             class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail imgCarrusel" src="assets/img/capturagoogleMpas.png" alt="maps"
-                                data-bs-toggle="tooltip" data-bs-placement="top" title="API Google Maps JS">
+                            <img class="img-fluid img-thumbnail imgCarrusel" src="assets/img/capturagoogleMpas.png"
+                                alt="maps" data-bs-toggle="tooltip" data-bs-placement="top" title="API Google Maps JS">
                         </a>
                     </div>
                     <div class="carousel-item">
@@ -271,28 +278,31 @@
                     <div class="carousel-item">
                         <a href="https://github.com/FelipeGonzalezValderrama/GestionEstudiantes" target="_blank"
                             class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail imgCarrusel" src="assets/img/GestionEstudiantesworks2.png"
-                                alt="GestionEstudiantes JAVA" data-bs-toggle="tooltip" data-bs-placement="top"
+                            <img class="img-fluid img-thumbnail imgCarrusel"
+                                src="assets/img/GestionEstudiantesworks2.png" alt="GestionEstudiantes JAVA"
+                                data-bs-toggle="tooltip" data-bs-placement="top"
                                 title="Gestion Estudiantes Java JPA Thymeleaf">
                         </a>
                     </div>
                     <div class="carousel-item">
                         <a href="https://github.com/FelipeGonzalezValderrama/PhytonDigimonApiConsumo" target="_blank"
                             class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail imgCarrusel" src="assets/img/phytonApiWorks.png" alt="phyton"
-                                data-bs-toggle="tooltip" data-bs-placement="top" title="Consumo API Phyton">
+                            <img class="img-fluid img-thumbnail imgCarrusel" src="assets/img/phytonApiWorks.png"
+                                alt="phyton" data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="Consumo API Phyton">
                         </a>
                     </div>
                     <div class="carousel-item">
                         <a href="https://github.com/FelipeGonzalezValderrama/cajeroAutomatico" target="_blank"
                             class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail imgCarrusel" src="assets/img/JavaScriptMenu.png" alt="jscajero"
-                                data-bs-toggle="tooltip" data-bs-placement="top" title="Menu Cajero JavaScript">
+                            <img class="img-fluid img-thumbnail imgCarrusel" src="assets/img/JavaScriptMenu.png"
+                                alt="jscajero" data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="Menu Cajero JavaScript">
                         </a>
                     </div>
                     <div class="carousel-item">
-                        <a href="https://github.com/FelipeGonzalezValderrama/dvdrentalsql/blob/main/final_drill.sql" target="_blank"
-                            class="d-block mb-4 h-100">
+                        <a href="https://github.com/FelipeGonzalezValderrama/dvdrentalsql/blob/main/final_drill.sql"
+                            target="_blank" class="d-block mb-4 h-100">
                             <img class="img-fluid img-thumbnail imgCarrusel" src="assets/img/SQLimgSakila.png" alt="SQL"
                                 data-bs-toggle="tooltip" data-bs-placement="top" title="Consultas SQL sakilaDB">
                         </a>
@@ -300,7 +310,8 @@
                     <div class="carousel-item">
                         <a href="https://felipegonzalezvalderrama.github.io/neonBurger/" target="_blank"
                             class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail imgCarrusel" src="assets/img/Captura de pantalla 2023-06-02 153345.png" alt="neonBurger"
+                            <img class="img-fluid img-thumbnail imgCarrusel"
+                                src="assets/img/Captura de pantalla 2023-06-02 153345.png" alt="neonBurger"
                                 data-bs-toggle="tooltip" data-bs-placement="top" title="Neon Burger Html-Css-JS">
                         </a>
                     </div>
@@ -321,7 +332,7 @@
     </section>
 
     <br><br>
-    <!--end work section-->
+    <!--end work Carousel section-->
     <!-- Contact email google maps -->
     <section id="contact">
         <div class="container">
