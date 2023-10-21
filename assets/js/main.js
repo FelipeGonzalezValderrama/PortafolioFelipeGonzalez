@@ -11,7 +11,7 @@ if ($('.text-slider').length == 1) {
   });
 }
 
-/*--/ Navbar Menu cambio transparente a blanco /--*/
+/*--/ Navbar Menu cambio a blanco /--*/
 $(window).trigger('scroll');
 $(window).on('scroll', function () {
   var pixels = 50;
